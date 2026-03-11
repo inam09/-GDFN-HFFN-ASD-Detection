@@ -1,0 +1,19 @@
+# ── TensorFlow (GDFN / HFFN CNN variants) ─────────────────────────────────────
+tensorflow>=2.10.0
+
+# ── PyTorch (GDFN / HFFN ViT-B & Swin-B variants) ────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+timm>=0.9.0
+
+# ── Computer Vision ────────────────────────────────────────────────────────────
+opencv-contrib-python>=4.7.0   # required for SIFT (HFFN)
+# opencv-python>=4.7.0         # sufficient for GDFN (no SIFT needed)
+dlib>=19.24.0                  # required for GDFN (facial landmarks)
+
+# ── Machine Learning ───────────────────────────────────────────────────────────
+scikit-learn>=1.2.0
+numpy>=1.23.0
+
+# ── Plotting (optional, used in original data-loading scripts) ─────────────────
+matplotlib>=3.6.0
