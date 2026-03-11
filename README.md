@@ -1,8 +1,4 @@
-# GDFN & HFFN — Dual-Branch Networks for Autism Spectrum Disorder Detection
-
-This repository contains the official implementation for our paper:
-
-> **"Automated Detection of Autism Spectrum Disorder Using Geometric Distance Feature Network (GDFN) and Histogram Feature Fusion Network (HFFN)"**
+# GDFN & HFFN — Dual-Branch Networks for Autism Spectrum Disorder Screenign
 
 Two dual-branch deep learning architectures are proposed:
 - **GDFN** — fuses CNN/Transformer image features with facial *landmark geometric distances* (31 pairs, dlib 68-point model)
@@ -71,19 +67,20 @@ SIFT keypoint descriptors are extracted and fixed to a 25 600-dimensional vector
 **Augmentation (KFold variants):** Random rotation ±90°, zoom 20%, horizontal flip
 
 ---
-
 ## Datasets
+### Attention Dataset
+- Source: Eye-tracking / gaze attention facial images
+- Classes: `ASD` | `TD` (Typically Developing)
+- Directory: `test-face-vs1/`
+- Split: 80% train (5-Fold CV) / 20% test
+
 
 ### AID — Autism Image Dataset
 - Source: [Kaggle ASD Screening Image Dataset](https://www.kaggle.com/datasets/imrankhan77/autistic-children-facial-data-set)
 - Classes: `autistic` | `non_autistic`
 - Split: `AID/train/` | `AID/valid/` | `AID/test/`
 
-### Attention Dataset
-- Source: Eye-tracking / gaze attention facial images
-- Classes: `ASD` | `TD` (Typically Developing)
-- Directory: `test-face-vs1/`
-- Split: 80% train (5-Fold CV) / 20% test
+
 
 > **Note:** Datasets are **not included** in this repository due to licensing. Download and place them in the folder structure shown above before running.
 
@@ -198,20 +195,8 @@ All scripts print per-epoch training/validation accuracy, and at the end output:
 | Specificity | TN / (TN + FP)                   |
 | F1-Score    | 2 × Precision × Recall / (P + R) |
 
----
 
-## Citation
 
-If you use this code in your research, please cite our paper:
-
-```bibtex
-@article{yourpaper2025,
-  title   = {Automated Detection of Autism Spectrum Disorder Using Geometric Distance Feature Network and Histogram Feature Fusion Network},
-  author  = {Your Name and Co-authors},
-  journal = {Journal Name},
-  year    = {2025}
-}
-```
 
 ---
 
