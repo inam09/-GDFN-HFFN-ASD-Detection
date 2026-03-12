@@ -20,7 +20,7 @@ Both networks are evaluated on two datasets and with seven pretrained backbones.
 │   └── GDFN_ViT_Swin_Attention.py   # PyTorch | Attention | ViT-B/16, Swin-B | 5-Fold CV
 │
 ├── HFFN/                              # Hybrid Feature Fusion Network
-│   ├── HFFN_AID.py                   # TF  | AID dataset  | train/valid/test
+│   ├── HFFN_AID.py                   # TF  | AID dataset  | train/valid/test 
 │   ├── HFFN_AID_KFold.py             # TF  | AID dataset  | 5-Fold CV
 │   ├── HFFN_Attention.py             # TF  | Attention dataset | 5-Fold CV
 │   ├── HFFN_ViT_Swin_AID.py          # PyTorch | AID | ViT-B/16, Swin-B
@@ -140,7 +140,7 @@ Download `shape_predictor_68_face_landmarks.dat` from the [dlib model zoo](http:
 ```
 
 ---
-
+ 
 ## Usage
 
 ### TensorFlow variants (CNN backbones)
