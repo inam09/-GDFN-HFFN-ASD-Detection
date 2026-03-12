@@ -6,7 +6,7 @@ saved_models/
 
 # ── Dataset folders (do NOT commit raw data) ──────────────────────────────────
 AID/
-test-face-vs1/
+Attention_dataset/
 
 # ── Dlib model file (large binary — download separately) ──────────────────────
 shape_predictor_68_face_landmarks.dat
