@@ -29,7 +29,7 @@ import dlib
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 IMG_SIZE       = 224
-DATADIR        = 'test-face-vs1'
+DATADIR        = 'Attention_dataset'
 CARTEGORIES    = ['ASD', 'TD']
 MODEL_SAVE_DIR = 'saved_models/GDFN'
 os.makedirs(MODEL_SAVE_DIR, exist_ok=True)
