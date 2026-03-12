@@ -71,7 +71,7 @@ SIFT keypoint descriptors are extracted and fixed to a 25 600-dimensional vector
 ### Attention Dataset
 - Source: Our VR-CPT Task
 - Classes: `ASD` | `TD` (Typically Developing)
-- Directory: `test-face-vs1/`
+- Directory: `Attention_dataset/`
 - Split: 80% train (5-Fold CV) / 20% test
 
 
