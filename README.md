@@ -41,7 +41,7 @@ Both networks are evaluated on two datasets and with seven pretrained backbones.
 ```
 Input Image ──► Pretrained Backbone ──► Flatten ──► Dense(512) ──► Dense(256) ──┐
                                                                                   ├──► Concat ──► Dense(256) ──► Dense(2)
-31 Distances ──────────────────────────────────► Dense(256) ──► Dense(128) ──────┘
+Input Image ──► 31 Distances ─────────────────────► Dense(256) ──► Dense(128) ──┘
 ```
 
 The 31 distance pairs are computed from 18 selected dlib facial landmarks covering eyes, nose, and mouth regions.
@@ -51,7 +51,7 @@ The 31 distance pairs are computed from 18 selected dlib facial landmarks coveri
 ```
 Input Image ──► Pretrained Backbone ──► Flatten ──► Dense(512) ──► Dense(256) ──┐
                                                                                   ├──► Concat ──► Dense(256) ──► Dense(2)
-SIFT (25600) ──────────────────────────────────► Dense(256) ──► Dense(128) ──────┘
+Input Image ──► SIFT (25600) ─────────────────────► Dense(256) ──► Dense(128) ──┘
 ```
 
 SIFT keypoint descriptors are extracted and fixed to a 25 600-dimensional vector.
@@ -69,7 +69,7 @@ SIFT keypoint descriptors are extracted and fixed to a 25 600-dimensional vector
 ---
 ## Datasets
 ### Attention Dataset
-- Source: Eye-tracking / gaze attention facial images
+- Source: Our VR-CPT Task
 - Classes: `ASD` | `TD` (Typically Developing)
 - Directory: `test-face-vs1/`
 - Split: 80% train (5-Fold CV) / 20% test
@@ -82,7 +82,7 @@ SIFT keypoint descriptors are extracted and fixed to a 25 600-dimensional vector
 
 
 
-> **Note:** Datasets are **not included** in this repository due to licensing. Download and place them in the folder structure shown above before running.
+> **Note:** Datasets are **not included** in this repository. Download and place them in the folder structure shown above before running.
 
 ---
 
