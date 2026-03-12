@@ -76,7 +76,7 @@ SIFT keypoint descriptors are extracted and fixed to a 25 600-dimensional vector
 
 
 ### AID — Autism Image Dataset
-- Source: [Kaggle ASD Screening Image Dataset](https://www.kaggle.com/datasets/imrankhan77/autistic-children-facial-data-set)
+- Source: [Autism Image Dataset](https://www.kaggle.com/datasets/imrankhan77/autistic-children-facial-data-set)
 - Classes: `autistic` | `non_autistic`
 - Split: `AID/train/` | `AID/valid/` | `AID/test/`
 
