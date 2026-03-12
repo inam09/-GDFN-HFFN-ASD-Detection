@@ -20,7 +20,7 @@ import timm
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 from sklearn.model_selection import KFold, train_test_split
 
-IMG_SIZE=224; DATADIR='test-face-vs1'; CARTEGORIES=['ASD','TD']
+IMG_SIZE=224; DATADIR='Attention_dataset'; CARTEGORIES=['ASD','TD']
 MODEL_SAVE_DIR='saved_models/HFFN'; os.makedirs(MODEL_SAVE_DIR,exist_ok=True)
 target_names=['ASD','TD']; device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
