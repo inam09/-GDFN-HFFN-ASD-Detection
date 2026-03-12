@@ -2,7 +2,7 @@
 
 Two dual-branch deep learning architectures are proposed:
 - **GDFN** — fuses CNN/Transformer image features with facial *landmark geometric distances* (31 pairs, dlib 68-point model)
-- **HFFN** — fuses CNN/Transformer image features with *SIFT descriptor histograms* (25 600-d feature vector)
+- **HFFN** — fuses CNN/Transformer image features with *SIFT descriptor* (25 600-d feature vector)
 
 Both networks are evaluated on two datasets and with seven pretrained backbones.
 
@@ -19,7 +19,7 @@ Both networks are evaluated on two datasets and with seven pretrained backbones.
 │   ├── GDFN_ViT_Swin_AID_KFold.py   # PyTorch | AID | ViT-B/16, Swin-B | 5-Fold CV
 │   └── GDFN_ViT_Swin_Attention.py   # PyTorch | Attention | ViT-B/16, Swin-B | 5-Fold CV
 │
-├── HFFN/                              # Histogram Feature Fusion Network
+├── HFFN/                              # Hybrid Feature Fusion Network
 │   ├── HFFN_AID.py                   # TF  | AID dataset  | train/valid/test
 │   ├── HFFN_AID_KFold.py             # TF  | AID dataset  | 5-Fold CV
 │   ├── HFFN_Attention.py             # TF  | Attention dataset | 5-Fold CV
