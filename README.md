@@ -90,7 +90,7 @@ SIFT keypoint descriptors are extracted and fixed to a 25 600-dimensional vector
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/inam09/-GDFN-HFFN-ASD-Detection.git
 cd <repo-name>
 ```
 
